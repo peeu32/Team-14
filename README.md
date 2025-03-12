@@ -9,6 +9,16 @@
 - **Commuters:** Delays impact work, school and appointments of transit users. This project will provide real-time insights into transit delays so commuters can plan accordingly reducing stress and driving up productivity.
 - **Environmental Policy Advocates:** Public transit delays push people toward private cars, thus increasing emissions. This project can support policies aimed at improving public transport reliability and usage of TTC.
 
+## Transit Delays versus Society: 
+- **Social Impact**:
+Subway delays increase commuter stress, leading to dissatisfaction with public transit. People who rely on the TTC for work, school, and appointments experience daily disruptions. Unreliable service can push riders toward other transportation options, reducing trust in the system.
+- **Economic Impact**:
+Transit delays reduce workplace productivity as employees arrive late or miss important meetings. Businesses near subway stations may also suffer revenue losses if delays discourage foot traffic. A poorly functioning transit system can weaken a city's overall economic efficiency.
+- **Environmental Impact**:
+Frequent delays push commuters toward personal vehicles, increasing traffic congestion and carbon emissions. This shift away from public transportation contributes to pollution and makes urban areas less sustainable. A more reliable subway system encourages people to choose eco-friendly transit options.
+- **How This Project Aims to Help**:
+Our machine learning model predicts subway delays, allowing transit authorities to take proactive measures. Identifying high-delay periods helps optimize train schedules, reducing disruptions. These insights can improve the overall commuter experience, making public transit a more attractive and efficient choice.
+
 ## Research Question:
 - Can we predict the average delay (Min Delay) of Toronto transit vehicles based on factors like time of day, station location, and train line?
 
@@ -25,7 +35,7 @@
 - Cause: The reason for the delay.
 
 ## Project Objectives:
-- Data Cleaning & Preprocessing
+- Data Cleaning & Preprocessing 
 - Handle missing values and outliers.
 - Convert categorical data into numerical format.
 - Standardize numerical features.
