@@ -22,11 +22,21 @@ Our machine learning model predicts subway delays, allowing transit authorities 
 ## Research Question:
 - Can we predict the average delay (Min Delay) of Toronto transit vehicles based on factors like time of day, station location, and train line?
 
+## Questions We Are Trying to Answer: 
+- What times of the day have the longest delays?
+- Which subway lines/stations are most affected?
+- How predictable are delays based on historical trends?
+- Can machine learning provide accurate delay forecasts?
+  
 ## Dataset:
 - Source: Open Toronto Data - TTC Subway Delay Data
 - Description: The dataset from Open Toronto covers TTC subway delays from 2017-2025. The dataset includes historical subway delay records, including details on station, time, line, delay reason, and duration. The dataset has missing values, inconsistent station names, and lacks real-time external factors like weather and special events.
 - Dataset Limitations: no real-time tracking, station-based delays and duration inconsistencies
-  
+
+ ##Risks & Uncertainties:
+- Like any data-driven project, this model comes with challenges. One major risk is data gaps and inaccuracies—some delays might be underreported or missing, which could impact the reliability of our predictions. Additionally, the dataset has a limited scope, as it doesn’t account for external factors like weather, accidents, or labor strikes, all of which can significantly impact subway delays. Another challenge is changing transit patterns like the COVID-19 pandemic, new subway expansions, or shifts in commuter behavior could make historical data less predictive of future delays.
+- To address these uncertainties, we’ll focus on data cleaning and validation to handle inconsistencies and ensure accuracy. Feature engineering will play a key role in making our model more robust by identifying patterns even within an imperfect dataset. In the future, we may integrate external data sources like weather reports and real-time transit feeds to enhance prediction accuracy and make the model even more useful for riders and transit authorities alike.
+
 ## Key Features Used:
 - Time Period: Time of the delay occurrence.
 - Station: The affected subway station.
