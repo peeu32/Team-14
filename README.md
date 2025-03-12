@@ -1,4 +1,4 @@
-# Predicting TTC Subway Delays Using Machine Learning
+# TTC Delay Predictor
 
 ## Overview:
 - Subway delays are a major inconvenience for Toronto commuters, affecting travel time and overall transit efficiency. This project aims to build a regression model to predict subway delays based on factors such   as time of day, station location, and train line. By identifying key patterns in delay occurrences, we can provide actionable insights to improve transit operations and commuter experience.
