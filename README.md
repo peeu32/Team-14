@@ -30,9 +30,9 @@
 
 ## Regression Model Development
 - Train and evaluate multiple models:
-- Linear Regression
-- Random Forest Regressor
-- Gradient Boosting Regressor
+  - Linear Regression
+  - Random Forest Regressor
+  - Gradient Boosting Regressor
 - Select the best-performing model based on Mean Squared Error (MSE) and R² score.
 
 ## Business Impact Analysis
