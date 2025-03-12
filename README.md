@@ -39,3 +39,36 @@
 - Identify critical time periods and stations for delay occurrences.
 - Estimate potential cost savings from reducing delays.
 - Provide insights for TTC and city planners to improve transit efficiency.
+
+## Results
+
+-The best-performing model was [model name], with an R² score of [R² value].
+-Peak delay times were observed during morning (7-9 AM) and evening rush hours (5-7 PM).
+- The most affected stations were [Top 3 stations].
+- Delay reasons such as [most common delay reasons] had a significant impact.
+- Estimated cost of subway delays per occurrence: $[estimated cost].
+
+## Output files:
+- Model performance results: model_results.csv
+- Business impact report: business_analysis.txt
+
+## Business Impact Summary
+- Transit Scheduling Improvements: Predictive insights can help optimize subway schedules during peak hours.
+- Infrastructure Planning: Identifying problematic stations helps prioritize maintenance and upgrades.
+- Economic Benefits: Reducing delays can save operational costs and improve commuter satisfaction.
+
+## Future Work
+- Integrate real-time delay prediction using live data feeds.
+- Improve model accuracy with additional external factors (e.g., weather, special events).
+- Develop a web dashboard for interactive delay forecasts.
+
+## Contributors
+- Chinyere Johnson
+- Tian Qin
+- Faraz Shahid
+- Joey Poh
+- Peeu Banerjee
+
+## References
+- Open Toronto Data - TTC Subway Delay Data: https://open.toronto.ca/dataset/ttc-subway-delay-data/
+- Scikit-learn documentation: https://scikit-learn.org/
