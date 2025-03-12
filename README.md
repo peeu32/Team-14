@@ -14,8 +14,9 @@
 
 ## Dataset:
 - Source: Open Toronto Data - TTC Subway Delay Data
-- Description: The dataset includes historical subway delay records, including details on station, time, line, delay reason, and duration.
-
+- Description: The dataset from Open Toronto covers TTC subway delays from 2017-2025. The dataset includes historical subway delay records, including details on station, time, line, delay reason, and duration. The dataset has missing values, inconsistent station names, and lacks real-time external factors like weather and special events.
+- Dataset Limitations: no real-time tracking, station-based delays and duration inconsistencies
+  
 ## Key Features Used:
 - Time Period: Time of the delay occurrence.
 - Station: The affected subway station.
