@@ -7,7 +7,6 @@
 - **Toronto Transit Commission (TTC), City Planners:** This project will help TTC/city planners optimize schedules, deploy resources effectively, and improve service reliability through data-driven decision making.
 - **Local Businesses:** This project will allow businesses near transit hubs to adjust schedules based on predicted delays as it would lead to more productive employee performances driving down costs. It would also allow businesses to import/export goods/services more efficiently driving down business costs.
 - **Commuters:** Delays impact work, school and appointments of transit users. This project will provide real-time insights into transit delays so commuters can plan accordingly reducing stress and driving up productivity.
-## Stakeholders & Impact
 - **Environmental Policy Advocates:** Public transit delays push people toward private cars, thus increasing emissions. This project can support policies aimed at improving public transport reliability and usage of TTC.
 
 ## Research Question:
