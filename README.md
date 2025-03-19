@@ -130,10 +130,12 @@ Stacked Model	0.41	9.20	0.88
 
 
 ## Results:
-!(https://github.com/user-attachments/assets/fbd514bb-ecb5-416b-ab2f-409c60477afa)
+### Delay Trends
+![image](https://github.com/user-attachments/assets/9e1f2791-c631-418c-86e2-0d6b1f9a8f9c)
 
 *Figure 1: Line graph showing the Trend of Average Delay Time Over the Years.*
 
+## The Best-Performing Model
 - The best-performing model was Optimized Random Forest, with an R² score of 0.89, MSE of 7.97 and MAE of 0.37.
 
 ![image](https://github.com/user-attachments/assets/b05538a0-1a69-4018-a453-f3a729f759e2)
