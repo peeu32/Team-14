@@ -131,10 +131,24 @@ Stacked Model	0.41	9.20	0.88
 
 ## Results:
 - The best-performing model was Optimized Random Forest, with an R² score of 0.89, MSE of 7.97 and MAE of 0.37.
+
+ 
 - Peak delay times were observed during morning (7-9 AM) and evening rush hours (5-7 PM).
+
+
 - The most affected stations were Kennedy, Kipling and Finch station.
+
+
 - The minimum gap had a significant impact.
+
+  
 - Estimated cost of subway delays per occurrence: $[estimated cost].
+
+- Actual vs predicted delays (using the best model: Optimized Random Forest)
+![Actual vs. Predicted Delays](assets/images/actual_vs_predicted_delays.png)
+*Figure 6: Scatter plot comparing actual and predicted delays.*
+
+
 
 ## Output files:
 - Model performance results: model_results.csv
