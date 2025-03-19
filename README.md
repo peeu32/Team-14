@@ -130,23 +130,31 @@ Stacked Model	0.41	9.20	0.88
 
 
 ## Results:
+- !(https://github.com/user-attachments/assets/fbd514bb-ecb5-416b-ab2f-409c60477afa)
+*Figure 1: Line graph showing the Trend of Average Delay Time Over the Years.*
+
 - The best-performing model was Optimized Random Forest, with an R² score of 0.89, MSE of 7.97 and MAE of 0.37.
 
+![image](https://github.com/user-attachments/assets/b05538a0-1a69-4018-a453-f3a729f759e2)
+*Figure 2 showing the comparison of models.*
  
 - Peak delay times were observed during morning (7-9 AM) and evening rush hours (5-7 PM).
-
+  
+![image](https://github.com/user-attachments/assets/8bac6f97-8457-45dc-a09c-961e41f02d1d)
+*Figure 3 showing Heatmap Delays by Hour and Day.*
 
 - The most affected stations were Kennedy, Kipling and Finch station.
 
 
 - The minimum gap had a significant impact.
+![image](https://github.com/user-attachments/assets/db9526b7-bf27-4017-864a-619eff4c1d6e)
 
   
 - Estimated cost of subway delays per occurrence: $[estimated cost].
 
 - Actual vs predicted delays (using the best model: Optimized Random Forest)
 
-![Screenshot 2025-03-19 131528](https://github.com/user-attachments/assets/301bec86-464e-4e73-820f-0b8241a2c1f4)
+!(https://github.com/user-attachments/assets/301bec86-464e-4e73-820f-0b8241a2c1f4)
 *Figure 6: Scatter plot comparing actual and predicted delays.*
 
 
