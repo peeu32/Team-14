@@ -90,70 +90,87 @@ Use cross-validation techniques to ensure model generalizability across differen
 ## 1. Trends in Subway Delays Over Time
 The analysis of average delay times across years highlights a notable increase in delays, especially after 2019 (possibly due to effects of COVID-19 causing labor shortages and decrease in preventative activities). Since 2019, the cost due to delays is also on an up-ward trend with cost to TTC due to delays ballooning to over $7 million in 2022 and 2024 (refer to Figure 2). Generally, the trend suggests that delays have been worsening over time, potentially due to factors such as increased ridership, aging infrastructure, or operational inefficiencies. 
  ![image](https://github.com/user-attachments/assets/7932d642-4872-450b-b489-506dbf349360)
+
 Figure 1. Trend of Average Delay Time Over the Years.
 ![image](https://github.com/user-attachments/assets/86721766-3557-416c-bb69-f59c4000f7f4)
+
 Figure 2. Estimated cost of delays over the years (assuming $100 per minutes of cost per standard TTC data). 
 Actionable Insight for TTC: Further investigation into policies or operational changes introduced around 2019-2020 may help identify key contributing factors to this exponential-like increase.
 
 ## 2. Delay Patterns by Time of Day
 A closer look at subway delays by hour of the day shows clear rush-hour peaks around 6 AM - 9 AM and 4 PM - 6 PM, which correspond to typical commuter traffic (rush hour times).
  ![image](https://github.com/user-attachments/assets/28214c20-f988-404a-b02e-62942af122a6)
+
 Figure 3. Plot of Average Delay (in minutes) by Time of the Day (24-hour format). 
  ![image](https://github.com/user-attachments/assets/be5f8e44-1a36-4c22-9a07-4937edbf1766)
+
 Figure 4. Plot of number of Delays by Time of the Day (on an hourly basis). 
  ![image](https://github.com/user-attachments/assets/fe5f41a2-4e4d-4063-b2da-1bc44b8513b7)
+
 Figure 5. Heatmap of Delays by Hour of Day (24-hour format) and Day of the Week. 
 Actionable Insight for TTC: Resource allocation strategies should focus on these peak congestion periods to mitigate delays.
 
 ## 3. Most Delayed Stations
 Some TTC subway stations experience significantly more delays than others. The data reveals that the top 10 most frequently delayed stations include Kennedy, Kipling, Finch, and St. George, among others.
  ![image](https://github.com/user-attachments/assets/ef32c19a-1174-4da8-8436-a3568dd398ac)
+
 Figure 6. Plot of top 10 most frequently delayed stations.
  ![image](https://github.com/user-attachments/assets/d826bd4f-cb27-4655-9de4-24eadaabc19d)
+
 Figure 7. Plot of subway delays (in minutes) at the top 10 most frequently delayed stations. 
 Actionable Insight for TTC: Strategies to improve operations at these stations (e.g., better train scheduling, faster turnaround times) could have a system-wide impact on reducing overall delays.
 
 ## 4. Most Delayed Subway Lines
 Certain subway lines experience higher average delays than others. The top 10 subway lines with the highest average delay times include 66 Bus Route, Scarbrough (SRT) Line and followed by other bus routes.
  ![image](https://github.com/user-attachments/assets/831c82d1-72df-4642-951d-1f323f9ed80d)
+
 Figure 8. Plot of top 10 Subway/Bus Lines with Highest Average Delay (in minutes).
 Actionable Insight for TTC: Focused maintenance and operational improvements on high-delay subway/bus lines could greatly improve overall service efficiency.
 
 ## 5. Delay Causes and Their Impact
 Delays in the subway system occur due to a variety of reasons, including mechanical failures, signal issues, track maintenance, and external factors. The analysis identifies the top 10 delay reasons that result in the highest average delay times.
  ![image](https://github.com/user-attachments/assets/3b716906-0c68-47c9-be44-fa7840193674)
+
 Figure 9. Plot of top 10 Delay Reasons with Highest Average Delay (in minutes). 
  ![image](https://github.com/user-attachments/assets/4e95a4cc-351a-41d0-bef6-67ac93c0f4b2)
+
 Figure 10. Plot of correlation between Rush Hour, Non-Rush Hour, and top 10 most frequent Delay Codes.
 Actionable Insight for TTC: Preventative maintenance focused on the most common high-delay causes could lead to a reduction in prolonged service disruptions.
 
 ## 6. Correlation Between Train Gap and Delays
 A strong positive correlation (r = 0.91) exists between train/bus gaps (time between consecutive trains/buses) and delays. This suggests that longer gaps in train/bus schedules contribute to longer delays.
  ![image](https://github.com/user-attachments/assets/1c8d70c8-35c2-4289-afa2-373fbac70bc4)
+
 Figure 11. Plot of Correlation between Trains/Busses Gap Time and Delay Time. 
 Actionable Insight for TTC: Optimizing train frequency and reducing unexpected schedule gaps could reduce overall subway delays.
 
 ## 7. Directional Impact on Delays
 The train’s direction of travel ('Bound') also affects delays. The topmost delayed bound directions reveal that southbound and westbound trains experience the highest delays.
  ![image](https://github.com/user-attachments/assets/b6e1a21f-f894-4689-999e-2754ab77acce)
+
 Figure 12. Plot of Number of Delays by Train Direction. 
 Actionable Insight for TTC: Operational planning should consider high-delay directions and adjust scheduling accordingly.
 
 ## 8. Most Delayed Vehicles and Their Associated Delay Codes
-The analysis reveals that certain vehicles are repeatedly delayed. The data also shows which delay codes are most commonly associated with these delayed vehicles. The most common reasons for delays were (Low Voltage – EULV, Fire/Smoke – MUPLB, Bomb Threat – SUBT, Doors Open in Error – TUDOE, Consequential Delay – EUCD, and Track Level Debris – Controllable, No Operator Immediately Available – TUNOA, Speed Control Fault – MUSC, Passenger Assistance Alarm Activated - MUPAA). Some of these reasons are controllable through proper maintenance activities, scheduling and predicable (i.e., EULV, Debris, Operator Availability) while others are not controllable (i.e., someone pulling the fire alarm). 
+The analysis reveals that certain vehicles are repeatedly delayed. The data also shows which delay codes are most commonly associated with these delayed vehicles. The most common reasons for delays were (Low Voltage – EULV, Fire/Smoke – MUPLB, Bomb Threat – SUBT, Doors Open in Error – TUDOE, Consequential Delay – EUCD, and Track Level Debris Controllable, No Operator Immediately Available – TUNOA, Speed Control Fault – MUSC, Passenger Assistance Alarm Activated - MUPAA). Some of these reasons are controllable through proper maintenance activities, scheduling and predicable (i.e., EULV, Debris, Operator Availability) while others are not controllable (i.e., someone pulling the fire alarm). 
  ![image](https://github.com/user-attachments/assets/ca3da2c9-e6b6-4978-8c80-f164e42d22d9)
+
 Figure 13. Plot of Top 10 Vehicles with Highest Average Delay.
  ![image](https://github.com/user-attachments/assets/c14f33ed-118e-41c7-b412-9538138bc228)
+
 Figure 14. Plot of Top 10 most delayed vehicles and associated reasons. 
  ![image](https://github.com/user-attachments/assets/b502efc5-4957-4d79-a5e0-8d0f47244579)
+
 Figure 15. Plot of Top 10 Vehicle with most delay occurrences and associated reasons. 
 Actionable Insight for TTC: Targeted maintenance of frequently delayed vehicles as well as effective scheduling could significantly improve reliability of service.
 
 ## 9. Correlation Between Delay Code and Subway Line
 An analysis of the correlation between subway lines and the top 10 most frequent delay codes helps understand which lines are affected by which specific delay types. Data reveals that Miscellaneous Speed Control (MUSC) and Passenger Assistance Alarm Activated (MUPAA) are the most common reasons for subway lines, which are human actions and cannot be completely controlled. However, it may be helpful looking at reasoning behind MUSC delays to understand why speed reductions happens (i.e., track conditions due to weather). This data is not available for us and integration of such data would lead to a better understanding and model. 
  ![image](https://github.com/user-attachments/assets/5abcb763-b1a1-4a49-9493-2019633ee3e2)
+
 Figure 16. Plot of Correlation Between Subway Line and Top 10 Most Frequent Delay Code. 
  ![image](https://github.com/user-attachments/assets/b977d122-741d-4d80-984b-4824bc54ead0)
+
 Figure 17. Plot of Correlation Between Top 10 Most Frequent Delay Codes and Bound Direction.
 Actionable Insight for TTC: Customized mitigation strategies for specific subway lines based on their most common delay reasons can improve overall efficiency.
 
