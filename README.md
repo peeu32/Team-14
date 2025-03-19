@@ -45,29 +45,54 @@ Our machine learning model predicts subway delays, allowing transit authorities 
 - Cause: The reason for the delay.
 
 ## Project Objectives:
-- Data Cleaning & Preprocessing 
-- Handle missing values and outliers.
-- Convert categorical data into numerical format.
-- Standardize numerical features.
+## 1. Develop an Accurate Subway Delay Prediction Model
+- Build a machine learning regression model to predict average subway delay times (in minutes) using historical TTC subway delay data.
+- Compare different regression models, starting with a baseline Linear Regression model, and explore advanced techniques like Random Forest Regressor or deep learning.
+- Optimize model performance using hyperparameter tuning to improve prediction accuracy.
+  
+## 2. Analyze Key Factors Affecting Subway Delays
+- Investigate how factors such as time of day, station location, and train line influence subway delays.
+- Perform feature importance analysis to determine which variables contribute most to delays.
+- Conduct error analysis to identify and mitigate common sources of prediction errors.
 
-## Exploratory Data Analysis (EDA):
-- Identify trends and patterns in subway delays.
-- Visualize peak delay times and affected stations.
-- Determine the most influential factors causing delays.
+## 3. Ensure High-Quality Data Processing & Preparation
+- Perform data cleaning, including handling missing values, standardizing station and train line names, and converting time fields into meaningful numerical/categorical features.
+- Engineer new features such as rush hour indicators, day of the week, seasonal trends, and location-based encoding to enhance predictive power.
+- Normalize numerical variables and encode categorical variables for improved model performance.
 
-## Regression Model Development:
-- Train and evaluate multiple models:
-  - Linear Regression
-  - Random Forest Regressor
-  - Gradient Boosting Regressor
-- Select the best-performing model based on Mean Squared Error (MSE) and R² score.
+## 4. Evaluate and Validate Model Performance
+Assess model accuracy using key performance metrics such as Mean Absolute Error (MAE), Mean Squared Error (MSE), and R-squared (R²).
+Compare model results against the baseline model to determine performance improvements.
+Use cross-validation techniques to ensure model generalizability across different time periods and conditions.
 
-## Business Impact Analysis:
+## 5. Visualize and Interpret Model Findings
+- Generate data visualizations to illustrate subway delay trends by station, time of day, and train line.
+- Compare actual vs. predicted delay distributions to validate model effectiveness.
+- Present findings in a clear and interpretable manner for stakeholders, enabling informed decision-making.
+
+## 6. Document Methodology and Findings
+- Compile a comprehensive project report detailing the methodology, findings, and recommendations.
+- Prepare a presentation summarizing the project’s key insights and predictive outcomes.
+
+## 7. Lay the Foundation for Future Enhancements
+- Identify potential areas for improvement, such as incorporating real-time transit data, weather conditions, or passenger load data for more accurate predictions.
+- Discuss possible deployment strategies to integrate the model into TTC’s operational decision-making systems.
+
+## 8. Business Impact Analysis:
 - Identify critical time periods and stations for delay occurrences.
 - Estimate potential cost savings from reducing delays.
 - Provide insights for TTC and city planners to improve transit efficiency.
 
-## Results
+## Dataset Cleaning: 
+During the data cleaning process, several steps were taken to ensure data consistency and reliability. First, missing values in numerical columns, "Min Delay" and "Min Gap", were imputed with the average values for the corresponding "Station" to maintain accurate delay estimates. Rows with missing values in essential categorical columns, such as "Station", "Date", "Time", and "Day", were removed to preserve data integrity. For categorical fields, missing values in "Code" were replaced with the most common delay reason associated with the respective "Station", while missing values in "Bound" (train direction) and "Line" (subway line) were replaced with their most frequent values for the corresponding "Station" to maintain consistency. Additionally, rows where the "Vehicle" column was missing were removed to ensure that every record had a valid vehicle number.
+
+To resolve inconsistencies, "Station" names were standardized based on actual TTC subway station names, while bus stops were mapped to their correct street intersections. Non-standard TTC names that did not represent actual subway stations or bus stops were identified and removed to prevent errors in analysis. The "Bound" column was also corrected by removing non-standard or incorrect train directions that did not align with TTC's defined data standards. Similarly, the "Line" column was cleaned by removing any entries that did not correspond to an actual TTC subway line.
+
+Furthermore, outliers above the 99th percentile in numerical columns were detected and removed to prevent skewed results. Duplicate records were also identified and eliminated to ensure the dataset did not contain redundant data points. The "Vehicle" column was checked for inconsistencies, and any values that were zero, negative, or non-numeric were removed. The "Date" and "Time" columns were also reviewed for consistency, ensuring they followed the correct format and contained valid timestamps.
+
+These comprehensive cleaning steps enhanced data quality, removed inconsistencies, and ensured that the dataset was accurate, structured, and suitable for analysis and predictive modeling.
+
+## Results:
 - The best-performing model was [model name], with an R² score of [R² value].
 - Peak delay times were observed during morning (7-9 AM) and evening rush hours (5-7 PM).
 - The most affected stations were [Top 3 stations].
@@ -91,7 +116,7 @@ Our machine learning model predicts subway delays, allowing transit authorities 
 ## Contributors:
 - Chinyere Johnson
 - Tian Qin
-- Faraz Shahid
+- Faraz Shahid (Data Acquisition, Collection, Cleaning, Initial Exploration including Statistics/Visualizations)
 - Joey Poh
 - Peeu Banerjee
 
