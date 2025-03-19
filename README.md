@@ -150,8 +150,8 @@ For more effective business impact, we recommend the following measures:
 - Integrate real-time delay prediction using live data feeds.
 - Improve model accuracy with additional external factors (e.g., weather, special events).
 - Develop a web dashboard for interactive delay forecasts.
-- Gather data on passenger count to determine how many passengers are affected by delays.
-- Gather data on delay reasons to understand the impact of the delay on passenger count.
+- Gather data on passenger count to determine the quanitiy of passengers affected by delays.
+- Gather data on delay reasons to compare the impact of delays on passenger count.
 
 ## Contributors:
 - Chinyere Johnson
