@@ -122,7 +122,7 @@ Linear Regression	1.25	10.48	0.86
 Random Forest	0.38	8.55	0.88
 Optimized RF	0.37	7.97	0.89
 XGBoost	0.42	10.76	0.86
-Stacked Model	0.41	9.20	0.88
+Stacked Model	0.41	9.20	0.88 
 
 •	The Optimized Random Forest performed the best, achieving the lowest MAE and highest R².
 •	XGBoost had competitive performance but slightly underperformed Random Forest.
