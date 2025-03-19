@@ -72,7 +72,7 @@ Use cross-validation techniques to ensure model generalizability across differen
 - Compare actual vs. predicted delay distributions to validate model effectiveness.
 - Present findings in a clear and interpretable manner for stakeholders, enabling informed decision-making.
 
-##   9.6 Document Methodology and Findings
+###  9.6 Document Methodology and Findings
 - Compile a comprehensive project report detailing the methodology, findings, and recommendations.
 - Prepare a presentation summarizing the project’s key insights and predictive outcomes.
 
@@ -85,7 +85,7 @@ Use cross-validation techniques to ensure model generalizability across differen
 - Estimate potential cost savings from reducing delays.
 - Provide insights for TTC and city planners to improve transit efficiency.
 
-## 10.0 Key Findings and Trends: ##
+## 10.0 Findings and Trends: ##
 
 ###  10.1 Trends in Subway Delays Over Time
 The analysis of average delay times across years highlights a notable increase in delays, especially after 2019 (possibly due to effects of COVID-19 causing labor shortages and decrease in preventative activities). Since 2019, the cost due to delays is also on an up-ward trend with cost to TTC due to delays ballooning to over $7 million in 2022 and 2024 (refer to Figure 2). Generally, the trend suggests that delays have been worsening over time, potentially due to factors such as increased ridership, aging infrastructure, or operational inefficiencies. 
@@ -182,17 +182,7 @@ Figure 17. Plot of Correlation Between Top 10 Most Frequent Delay Codes and Boun
 
 Actionable Insight for TTC: Customized mitigation strategies for specific subway lines based on their most common delay reasons can improve overall efficiency.
 
-## 11.0 Conclusion & Recommendations
--	Delays are rising over time, with a sharp increase post-2019. Investigating policy and operational changes from this period may help identify contributing factors.
--	Rush hour delays (6-9 AM, 4-6 PM) are the highest, requiring optimized scheduling and resource allocation to manage peak congestion.
--	Kennedy, Kipling, and Finch stations experience the most delays—improving turnaround times and traffic flow at these stations could reduce overall disruptions.
--	Certain subway/bus lines, including the Scarborough (SRT) Line, have the highest delays. Focused maintenance and operational improvements are needed for these routes.
--	Mechanical failures, track-level debris, and voltage issues are leading delay causes. Prioritizing preventative maintenance can minimize service disruptions.
--	Train/bus gaps strongly correlate with delays, highlighting the need for improved scheduling and real-time monitoring to maintain frequency.
--	Southbound and westbound routes experience the longest delays, suggesting a need for targeted scheduling adjustments to balance service efficiency.
--	Customized solutions for each subway line, including predictive maintenance and better response strategies for common delay causes, can improve overall system.
-
-## 12.0 Data Acquisition & Cleaning: 
+## 11.0 Data Acquisition & Cleaning: 
 During the data cleaning process, several steps were taken to ensure data consistency and reliability. First, missing values in numerical columns, "Min Delay" and "Min Gap", were imputed with the average values for the corresponding "Station" to maintain accurate delay estimates. Rows with missing values in essential categorical columns, such as "Station", "Date", "Time", and "Day", were removed to preserve data integrity. For categorical fields, missing values in "Code" were replaced with the most common delay reason associated with the respective "Station", while missing values in "Bound" (train direction) and "Line" (subway line) were replaced with their most frequent values for the corresponding "Station" to maintain consistency. Additionally, rows where the "Vehicle" column was missing were removed to ensure that every record had a valid vehicle number.
 
 To resolve inconsistencies, "Station" names were standardized based on actual TTC subway station names, while bus stops were mapped to their correct street intersections. Non-standard TTC names that did not represent actual subway stations or bus stops were identified and removed to prevent errors in analysis. The "Bound" column was also corrected by removing non-standard or incorrect train directions that did not align with TTC's defined data standards. Similarly, the "Line" column was cleaned by removing any entries that did not correspond to an actual TTC subway line.
@@ -201,8 +191,7 @@ Furthermore, outliers above the 99th percentile in numerical columns were detect
 
 These comprehensive cleaning steps enhanced data quality, removed inconsistencies, and ensured that the dataset was accurate, structured, and suitable for analysis and predictive modeling.
 
-
-## 13.0 Model Evaluation and Analysis:
+## 12.0 Model Evaluation and Analysis:
 
 The following models were trained and evaluated:
 1.	Linear Regression (Baseline model)
@@ -224,14 +213,22 @@ Residual Analysis
 •	Examined model errors and residual distributions.
 •	Identified high-error cases and potential biases in predictions.
 
-## 14.0 Highlights and Key Take-aways:
+## 13.0 Conclusion & Recommendations
+-	Delays are rising over time, with a sharp increase post-2019. Investigating policy and operational changes from this period may help identify contributing factors.
+-	Rush hour delays (6-9 AM, 4-6 PM) are the highest, requiring optimized scheduling and resource allocation to manage peak congestion.
+-	Kennedy, Kipling, and Finch stations experience the most delays—improving turnaround times and traffic flow at these stations could reduce overall disruptions.
+-	Certain subway/bus lines, including the Scarborough (SRT) Line, have the highest delays. Focused maintenance and operational improvements are needed for these routes.
+-	Mechanical failures, track-level debris, and voltage issues are leading delay causes. Prioritizing preventative maintenance can minimize service disruptions.
+-	Train/bus gaps strongly correlate with delays, highlighting the need for improved scheduling and real-time monitoring to maintain frequency.
+-	Southbound and westbound routes experience the longest delays, suggesting a need for targeted scheduling adjustments to balance service efficiency.
+-	Customized solutions for each subway line, including predictive maintenance and better response strategies for common delay causes, can improve overall system.
 
-###   14.1 Delay Trends:
+###  13.1 Delay Trends:
 ![image](https://github.com/user-attachments/assets/9e1f2791-c631-418c-86e2-0d6b1f9a8f9c)
 
 *Figure 1: Line graph showing the Trend of Average Delay Time Over the Years.*
 
-###  14.2 Model Performance Comparison:
+###  13.2 Model Performance Comparison:
 - The best-performing model was Optimized Random Forest, with an R² score of 0.89, MSE of 7.97 and MAE of 0.37, achieving the lowest MAE and highest R².
 - XGBoost had competitive performance but slightly underperformed Random Forest.
 - The stacking model showed improvements in some cases but added complexity.
@@ -240,53 +237,53 @@ Residual Analysis
 
 *Figure 2 showing the comparison of models.*
 
-###  14.3 Peak Delay Times:
+###  13.3 Peak Delay Times:
 - Peak delay times were observed during morning (7-9 AM) and evening rush hours (5-7 PM).
   
 ![image](https://github.com/user-attachments/assets/8bac6f97-8457-45dc-a09c-961e41f02d1d)
 
 *Figure 3 showing Heatmap Delays by Hour and Day.*
 
-###  14.4 The Most Affected Stations:
+###  13.4 The Most Affected Stations:
 - The most affected stations were Kennedy, Kipling and Finch station.
 
 ![image](https://github.com/user-attachments/assets/fae21c32-f818-4309-8ce5-86792503aaab)
 
 *Figure 4 showing the top 10 most frequently delayed stations.*
 
-###  14.5 The Most Significant Feature:
+###  13.5 The Most Significant Feature:
 - The minimum gap had a significant impact.
  
 ![image](https://github.com/user-attachments/assets/db9526b7-bf27-4017-864a-619eff4c1d6e)
 
 *Figure 5 showing the most significant feature.*
 
-###  14.6 Actual vs predicted delays:
+###  13.6 Actual vs predicted delays:
 - Actual vs predicted delays (using the best model: Optimized Random Forest)
 
 ![image](https://github.com/user-attachments/assets/b6e71cd5-de08-4575-8ff0-a47134d4ddd6)
 
 *Figure 6: Scatter plot comparing actual and predicted delays.*
 
-##  15.0 Business Impact Summary:
+##  14.0 Business Impact Summary:
 - Transit Scheduling Improvements: Predictive insights can help optimize subway schedules during peak hours.
 - Infrastructure Planning: Identifying problematic stations helps prioritize maintenance and upgrades.
 - Economic Benefits: Reducing delays can save operational costs and improve commuter satisfaction.
 
-## 16.0 Future Work:
+## 15.0 Future Work:
 For more effective business impact, we recommend the following measures:
 - Integrate real-time delay prediction using live data feeds.
 - Improve model accuracy with additional external factors (e.g., weather, special events).
 - Develop a web dashboard for interactive delay forecasts.
 - Enhance model capability by accounting for passenger count and delay reasons to determine the quanitiy of passengers affected by delays and to compare the impact of delays on passenger count.
 
-## 17.0 Contributors:
+## 16.0 Contributors:
 - Chinyere Johnson
 - Tian Qin
 - Faraz Shahid (Data Acquisition, Collection, Cleaning, Initial Exploration including Statistics/Visualizations)
 - Joey Poh
 - Peeu Banerjee
 
-## 18.0 References:
+## 17.0 References:
 - Open Toronto Data - TTC Subway Delay Data: https://open.toronto.ca/dataset/ttc-subway-delay-data/
 - Scikit-learn documentation: https://scikit-learn.org/
