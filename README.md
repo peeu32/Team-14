@@ -117,15 +117,6 @@ Residual Analysis
 •	Examined model errors and residual distributions.
 •	Identified high-error cases and potential biases in predictions.
 
-3. Findings and Insights
-Model Performance Comparison
-Model	MAE	MSE	R²
-Linear Regression	1.25	10.48	0.86
-Random Forest	0.38	8.55	0.88
-Optimized RF	0.37	7.97	0.89
-XGBoost	0.42	10.76	0.86
-Stacked Model	0.41	9.20	0.88 
-
 ## Results:
 
 ### Delay Trends:
@@ -133,7 +124,7 @@ Stacked Model	0.41	9.20	0.88
 
 *Figure 1: Line graph showing the Trend of Average Delay Time Over the Years.*
 
-## The Best-Performing Model:
+## Model Performance Comparison:
 - The best-performing model was Optimized Random Forest, with an R² score of 0.89, MSE of 7.97 and MAE of 0.37, achieving the lowest MAE and highest R².
 - XGBoost had competitive performance but slightly underperformed Random Forest.
 - The stacking model showed improvements in some cases but added complexity.
@@ -154,19 +145,21 @@ Stacked Model	0.41	9.20	0.88
 
 ![image](https://github.com/user-attachments/assets/fae21c32-f818-4309-8ce5-86792503aaab)
 
-*Figure 4 showing the Top 10 most Frequently Delayed Stations.
+*Figure 4 showing the top 10 most frequently delayed stations.*
 
 ## The Most Significant Feature:
 - The minimum gap had a significant impact.
  
 ![image](https://github.com/user-attachments/assets/db9526b7-bf27-4017-864a-619eff4c1d6e)
 
+*Figure 5 showing the most significant feature.*
+
 ## Actual vs predicted delays:
 - Actual vs predicted delays (using the best model: Optimized Random Forest)
 
 ![image](https://github.com/user-attachments/assets/b6e71cd5-de08-4575-8ff0-a47134d4ddd6)
 
-*Figure 5: Scatter plot comparing actual and predicted delays.*
+*Figure 6: Scatter plot comparing actual and predicted delays.*
 
 ## Output files:
 - Model performance results: model_results.csv
