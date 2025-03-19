@@ -124,11 +124,6 @@ Optimized RF	0.37	7.97	0.89
 XGBoost	0.42	10.76	0.86
 Stacked Model	0.41	9.20	0.88 
 
-•	The Optimized Random Forest performed the best, achieving the lowest MAE and highest R².
-•	XGBoost had competitive performance but slightly underperformed Random Forest.
-•	The stacking model showed improvements in some cases but added complexity.
-
-
 ## Results:
 
 ### Delay Trends:
@@ -137,7 +132,9 @@ Stacked Model	0.41	9.20	0.88
 *Figure 1: Line graph showing the Trend of Average Delay Time Over the Years.*
 
 ## The Best-Performing Model:
-- The best-performing model was Optimized Random Forest, with an R² score of 0.89, MSE of 7.97 and MAE of 0.37.
+- The best-performing model was Optimized Random Forest, with an R² score of 0.89, MSE of 7.97 and MAE of 0.37, achieving the lowest MAE and highest R².
+- XGBoost had competitive performance but slightly underperformed Random Forest.
+- The stacking model showed improvements in some cases but added complexity.
 
 ![image](https://github.com/user-attachments/assets/b05538a0-1a69-4018-a453-f3a729f759e2)
 
@@ -159,13 +156,13 @@ Stacked Model	0.41	9.20	0.88
 
 ## The Most Significant Feature:
 - The minimum gap had a significant impact.
-- 
+ 
 ![image](https://github.com/user-attachments/assets/db9526b7-bf27-4017-864a-619eff4c1d6e)
 
 ## Actual vs predicted delays:
 - Actual vs predicted delays (using the best model: Optimized Random Forest)
 
-!(https://github.com/user-attachments/assets/301bec86-464e-4e73-820f-0b8241a2c1f4)
+![image](https://github.com/user-attachments/assets/b6e71cd5-de08-4575-8ff0-a47134d4ddd6)
 
 *Figure 5: Scatter plot comparing actual and predicted delays.*
 
