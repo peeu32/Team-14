@@ -145,7 +145,7 @@ Stacked Model	0.41	9.20	0.88
 - Estimated cost of subway delays per occurrence: $[estimated cost].
 
 - Actual vs predicted delays (using the best model: Optimized Random Forest)
-![Actual vs. Predicted Delays](assets/images/actual_vs_predicted_delays.png)
+![Screenshot 2025-03-19 131528](https://github.com/user-attachments/assets/301bec86-464e-4e73-820f-0b8241a2c1f4)
 *Figure 6: Scatter plot comparing actual and predicted delays.*
 
 
