@@ -1,6 +1,6 @@
 # TTC Delay Predictor
 
-![image](https://cdn.freebiesupply.com/logos/large/2x/ttc-1-logo-png-transparent.png)
+![image](https://cdn.ttc.ca/-/media/Project/TTC/DevProto/Icons/TTC-LOGO.svg?h=80&iar=0&w=130&rev=70dfaadb771a4a7486ae723e174fa823&hash=94FBEA98380BF40A67DA1D1C9E2FFB73)
 
 ## Overview:
 - Subway delays are a major inconvenience for Toronto commuters, affecting travel time and overall transit efficiency. This project aims to build a regression model to predict subway delays based on factors such   as time of day, station location, and train line. By identifying key patterns in delay occurrences, we can provide actionable insights to improve transit operations and commuter experience.
