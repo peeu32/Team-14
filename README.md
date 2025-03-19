@@ -130,42 +130,47 @@ Stacked Model	0.41	9.20	0.88
 
 
 ## Results:
-### Delay Trends
+
+### Delay Trends:
 ![image](https://github.com/user-attachments/assets/9e1f2791-c631-418c-86e2-0d6b1f9a8f9c)
 
 *Figure 1: Line graph showing the Trend of Average Delay Time Over the Years.*
 
-## The Best-Performing Model
+## The Best-Performing Model:
 - The best-performing model was Optimized Random Forest, with an R² score of 0.89, MSE of 7.97 and MAE of 0.37.
 
 ![image](https://github.com/user-attachments/assets/b05538a0-1a69-4018-a453-f3a729f759e2)
 
 *Figure 2 showing the comparison of models.*
- 
+
+## Peak Delay Times:
 - Peak delay times were observed during morning (7-9 AM) and evening rush hours (5-7 PM).
   
 ![image](https://github.com/user-attachments/assets/8bac6f97-8457-45dc-a09c-961e41f02d1d)
 
 *Figure 3 showing Heatmap Delays by Hour and Day.*
 
+## The Most Affected Stations:
 - The most affected stations were Kennedy, Kipling and Finch station.
 
+![image](https://github.com/user-attachments/assets/fae21c32-f818-4309-8ce5-86792503aaab)
 
+*Figure 4 showing the Top 10 most Frequently Delayed Stations.
+
+## The Most Significant Feature:
 - The minimum gap had a significant impact.
+- 
 ![image](https://github.com/user-attachments/assets/db9526b7-bf27-4017-864a-619eff4c1d6e)
 
-  
-- Estimated cost of subway delays per occurrence: $[estimated cost].
-
+## Actual vs predicted delays:
 - Actual vs predicted delays (using the best model: Optimized Random Forest)
 
 !(https://github.com/user-attachments/assets/301bec86-464e-4e73-820f-0b8241a2c1f4)
 
-*Figure 6: Scatter plot comparing actual and predicted delays.*
+*Figure 5: Scatter plot comparing actual and predicted delays.*
 
 ## Output files:
 - Model performance results: model_results.csv
-- Business impact report: business_analysis.txt
 
 ## Business Impact Summary:
 - Transit Scheduling Improvements: Predictive insights can help optimize subway schedules during peak hours.
@@ -177,8 +182,7 @@ For more effective business impact, we recommend the following measures:
 - Integrate real-time delay prediction using live data feeds.
 - Improve model accuracy with additional external factors (e.g., weather, special events).
 - Develop a web dashboard for interactive delay forecasts.
-- Gather data on passenger count to determine the quanitiy of passengers affected by delays.
-- Gather data on delay reasons to compare the impact of delays on passenger count.
+- Enhance model capability by accounting for passenger count and delay reasons to determine the quanitiy of passengers affected by delays and to compare the impact of delays on passenger count.
 
 ## Contributors:
 - Chinyere Johnson
