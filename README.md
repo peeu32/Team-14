@@ -92,11 +92,48 @@ Furthermore, outliers above the 99th percentile in numerical columns were detect
 
 These comprehensive cleaning steps enhanced data quality, removed inconsistencies, and ensured that the dataset was accurate, structured, and suitable for analysis and predictive modeling.
 
+
+## Model Evaluation and Analysis:
+
+The following models were trained and evaluated:
+1.	Linear Regression (Baseline model)
+2.	Random Forest Regressor (Improved model)
+3.	Optimized Random Forest (Tuned for best performance)
+4.	XGBoost Regressor (Gradient boosting alternative)
+5.	Stacking Model (Combining Random Forest and XGBoost)
+
+Performance was evaluated using:
+•	Mean Absolute Error (MAE)
+•	Mean Squared Error (MSE)
+•	R² Score
+
+Feature Importance Analysis
+•	Random Forest and XGBoost feature importances were compared.
+•	Important features included previous delays, time of day, and rolling averages.
+
+Residual Analysis
+•	Examined model errors and residual distributions.
+•	Identified high-error cases and potential biases in predictions.
+
+3. Findings and Insights
+Model Performance Comparison
+Model	MAE	MSE	R²
+Linear Regression	1.25	10.48	0.86
+Random Forest	0.38	8.55	0.88
+Optimized RF	0.37	7.97	0.89
+XGBoost	0.42	10.76	0.86
+Stacked Model	0.41	9.20	0.88
+
+•	The Optimized Random Forest performed the best, achieving the lowest MAE and highest R².
+•	XGBoost had competitive performance but slightly underperformed Random Forest.
+•	The stacking model showed improvements in some cases but added complexity.
+
+
 ## Results:
-- The best-performing model was [model name], with an R² score of [R² value].
+- The best-performing model was Optimized Random Forest, with an R² score of 0.89, MSE of 7.97 and MAE of 0.37.
 - Peak delay times were observed during morning (7-9 AM) and evening rush hours (5-7 PM).
-- The most affected stations were [Top 3 stations].
-- Delay reasons such as [most common delay reasons] had a significant impact.
+- The most affected stations were Kennedy, Kipling and Finch station.
+- The minimum gap had a significant impact.
 - Estimated cost of subway delays per occurrence: $[estimated cost].
 
 ## Output files:
