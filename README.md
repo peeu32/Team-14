@@ -95,6 +95,7 @@ Figure 1. Trend of Average Delay Time Over the Years.
 ![image](https://github.com/user-attachments/assets/86721766-3557-416c-bb69-f59c4000f7f4)
 
 Figure 2. Estimated cost of delays over the years (assuming $100 per minutes of cost per standard TTC data). 
+
 Actionable Insight for TTC: Further investigation into policies or operational changes introduced around 2019-2020 may help identify key contributing factors to this exponential-like increase.
 
 ## 2. Delay Patterns by Time of Day
@@ -108,6 +109,7 @@ Figure 4. Plot of number of Delays by Time of the Day (on an hourly basis).
  ![image](https://github.com/user-attachments/assets/fe5f41a2-4e4d-4063-b2da-1bc44b8513b7)
 
 Figure 5. Heatmap of Delays by Hour of Day (24-hour format) and Day of the Week. 
+
 Actionable Insight for TTC: Resource allocation strategies should focus on these peak congestion periods to mitigate delays.
 
 ## 3. Most Delayed Stations
@@ -118,6 +120,7 @@ Figure 6. Plot of top 10 most frequently delayed stations.
  ![image](https://github.com/user-attachments/assets/d826bd4f-cb27-4655-9de4-24eadaabc19d)
 
 Figure 7. Plot of subway delays (in minutes) at the top 10 most frequently delayed stations. 
+
 Actionable Insight for TTC: Strategies to improve operations at these stations (e.g., better train scheduling, faster turnaround times) could have a system-wide impact on reducing overall delays.
 
 ## 4. Most Delayed Subway Lines
@@ -125,6 +128,7 @@ Certain subway lines experience higher average delays than others. The top 10 su
  ![image](https://github.com/user-attachments/assets/831c82d1-72df-4642-951d-1f323f9ed80d)
 
 Figure 8. Plot of top 10 Subway/Bus Lines with Highest Average Delay (in minutes).
+
 Actionable Insight for TTC: Focused maintenance and operational improvements on high-delay subway/bus lines could greatly improve overall service efficiency.
 
 ## 5. Delay Causes and Their Impact
@@ -142,6 +146,7 @@ A strong positive correlation (r = 0.91) exists between train/bus gaps (time bet
  ![image](https://github.com/user-attachments/assets/1c8d70c8-35c2-4289-afa2-373fbac70bc4)
 
 Figure 11. Plot of Correlation between Trains/Busses Gap Time and Delay Time. 
+
 Actionable Insight for TTC: Optimizing train frequency and reducing unexpected schedule gaps could reduce overall subway delays.
 
 ## 7. Directional Impact on Delays
@@ -149,6 +154,7 @@ The train’s direction of travel ('Bound') also affects delays. The topmost del
  ![image](https://github.com/user-attachments/assets/b6e1a21f-f894-4689-999e-2754ab77acce)
 
 Figure 12. Plot of Number of Delays by Train Direction. 
+
 Actionable Insight for TTC: Operational planning should consider high-delay directions and adjust scheduling accordingly.
 
 ## 8. Most Delayed Vehicles and Their Associated Delay Codes
@@ -162,6 +168,7 @@ Figure 14. Plot of Top 10 most delayed vehicles and associated reasons.
  ![image](https://github.com/user-attachments/assets/b502efc5-4957-4d79-a5e0-8d0f47244579)
 
 Figure 15. Plot of Top 10 Vehicle with most delay occurrences and associated reasons. 
+
 Actionable Insight for TTC: Targeted maintenance of frequently delayed vehicles as well as effective scheduling could significantly improve reliability of service.
 
 ## 9. Correlation Between Delay Code and Subway Line
@@ -172,6 +179,7 @@ Figure 16. Plot of Correlation Between Subway Line and Top 10 Most Frequent Dela
  ![image](https://github.com/user-attachments/assets/b977d122-741d-4d80-984b-4824bc54ead0)
 
 Figure 17. Plot of Correlation Between Top 10 Most Frequent Delay Codes and Bound Direction.
+
 Actionable Insight for TTC: Customized mitigation strategies for specific subway lines based on their most common delay reasons can improve overall efficiency.
 
 ## 10. Conclusion & Recommendations
