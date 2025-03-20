@@ -278,7 +278,7 @@ For more effective business impact, we recommend the following measures:
 - Enhance model capability by accounting for passenger count and delay reasons to determine the quanitiy of passengers affected by delays and to compare the impact of delays on passenger count.
 
 ## 16.0 Contributors:
-- Chinyere Johnson
+- [Chinyere Johnson](https://www.youtube.com/watch?v=lqymaEIcpXk)
 - Tian Qin
 - Faraz Shahid (Data Acquisition, Collection, Cleaning, Initial Exploration including Statistics/Visualizations)
 - Joey Poh
