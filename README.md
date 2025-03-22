@@ -280,7 +280,7 @@ For more effective business impact, we recommend the following measures:
 ## 16.0 Contributors:
 - [Chinyere Johnson](https://www.youtube.com/watch?v=lqymaEIcpXk)
 - Tian Qin
-- Faraz Shahid (Data Acquisition, Collection, Cleaning, Initial Exploration including Statistics/Visualizations)
+- Faraz Shahid
 - Joey Poh
 - Peeu Banerjee
 
