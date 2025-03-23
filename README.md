@@ -280,7 +280,7 @@ For more effective business impact, we recommend the following measures:
 ## 16.0 Contributors:
 - [Chinyere Johnson](https://www.youtube.com/watch?v=lqymaEIcpXk)
 - Tian Qin https://youtu.be/klpSSW3gnBo
-- Faraz Shahid
+- Faraz Shahid (Video: https://youtu.be/yFL2x7UgmaA)
 - Joey Poh
 - Peeu Banerjee
 
