@@ -281,7 +281,7 @@ For more effective business impact, we recommend the following measures:
 - [Chinyere Johnson](https://www.youtube.com/watch?v=lqymaEIcpXk)
 - Tian Qin https://youtu.be/klpSSW3gnBo
 - Faraz Shahid (Video: https://youtu.be/yFL2x7UgmaA)
-- Joey Poh
+- Joey Poh (Video: https://www.youtube.com/watch?v=-fVaDQEistQ&ab_channel=JoeyPoh)
 - Peeu Banerjee
 
 ## 17.0 References:
